@@ -1,0 +1,43 @@
+<html>
+
+<head>
+  <title>My Family Book</title>
+  <script>var reasonarray = [
+    "Narayan Kasat",
+    "Sweta Kasat",
+    "Anika Kasat",
+    "Dhruv Kasat"
+  ];
+  var imgarray = [
+    "father.jpg",
+    "mother.jpg",
+    "sister.jpg",
+    "brother.jpg",
+  ];
+  var i = 0;
+  function nextslide() {
+    document.getElementById("img1").src = imgarray[i];
+    document.getElementById("reason1").innerHTML = reasonarray[i];
+    i++;
+    if (i > 3) {
+      i = 0;
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+      <title>My Family Book</title>
+    </head>
+    
+    <body>
+      
+      <center><p> My Family Book</p></center>
+      <center><img id="img1" src="https://images-na.ssl-images-amazon.com/images/I/51KNpAKei-L.jpg"></center>
+      <center><p id="reason1">This is the project on my family book</p></center>
+      <center><button id="btn1" onclick="nextslide()">next</button></center>
+    </body>
+  
+    
+</html> 
